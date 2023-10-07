@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BonanzaPagos</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/" />
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js"></script>
+    <link rel="stylesheet" href="csscode/styles.css" />
+
+</head>
+
+<body>
+    <!--CABECERA-->
+    <div id="head">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="imgs/bonanzalogo.png" alt="logo"
+                        style="float: left" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--PASOS-->
+    <div>
+        <div style="padding-top: 5%; padding-left: 10%;">
+            <h3>1.- Elige tu plan</h3>
+        </div>
+        <div class="container px-4" style="padding-bottom: 1%;">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-success" style="width: 33%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--TERMINA PASOS-->
+
+    <!--DIV CENTRAL-->
+    <div class="container overflow-hidden text-center" style="padding-top: 8%;">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">PAGO MENSUAL</div>
+                    <div class="card-body">
+                        <h5 class="card-title">1 MES</h5>
+                        <p class="card-text">1 mes por $199</p>
+                        <button id="precioMes" onclick="asignarPrecioButton()">
+                            <a href="metodoPago.html" class="btn btn-warning">Elegir este plan</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">PAGO SEMESTRAL</div>
+                    <div class="card-body">
+                        <h5 class="card-title">6 MES</h5>
+                        <p class="card-text">6 meses De 1194 a 1075 10% descuento</p>
+                        <a href="metodoPago.html" onclick="semetralJS()" class="btn btn-warning">Elegir este plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">PAGO ANUAL</div>
+                    <div class="card-body">
+                        <h5 class="card-title">1 AÑO</h5>
+                        <p class="card-text">1 año. De 2388 a 1910 25% descuento</p>
+                        <a href="metodoPago.html" onclick="anualJS()" class="btn btn-warning">Elegir este plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TERMINA DIV CENTRAL-->
+    <script src="jscode/myjs.js"></script>
+</body>
+
+</html>
